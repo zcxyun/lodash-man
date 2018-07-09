@@ -1,0 +1,7 @@
+<template name='search'>
+  <view class='search'>
+    <icon class='search-img' type='search' size='20' color='#fff'></icon>
+    <input type='text' value='{{searchText}}' placeholder='' confirm-type='search' placeholder-class='placeholder' bindfocus='' bindinput='onBindInput' bindconfirm='onBindInput'></input>
+    <icon wx:if='{{searchPanelShow}}' class='xx-img' type='clear' size='20' color='white' catchtap='onCancelImgTap'></icon>
+  </view>
+</template>

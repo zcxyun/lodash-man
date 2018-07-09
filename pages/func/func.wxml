@@ -1,0 +1,71 @@
+<view class='container'>
+
+  <block wx:if='{{funcItem}}'>
+    <view class='key'>
+      <text>{{funcItem}}</text>
+      <image wx:if='{{isCollected}}' src='/images/icon/star.png' catchtap='onCollected'></image>
+      <image wx:else src='/images/icon/none-star.png' catchtap='onCollected'></image>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.description}}</text>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.note}}'>
+    <view class='key'>
+      <text>注意</text>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.note}}</text>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.introduced}}'>
+    <view class='key'>
+      <text>引入版本</text>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.introduced}}</text>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.aliases}}'>
+    <view class='key'>
+      <text>别名</text>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.aliases}}</text>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.params && funcObj.params.length !== 0}}'>
+
+    <view class='key'>
+      <text>参数</text>
+    </view>
+    <view class='value'>
+      <view class='value-attr' wx:for='{{funcObj.params}}' wx:key='*this'>
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.returnValue}}'>
+    <view class='key'>
+      <text>返回值</text>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.returnValue}}</text>
+    </view>
+  </block>
+
+  <block wx:if='{{funcObj.demo}}'>
+    <view class='key'>
+      <text>示例</text>
+    </view>
+    <view class='value'>
+      <text>{{funcObj.demo}}</text>
+    </view>
+  </block>
+
+</view>

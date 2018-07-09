@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/funcList/funcList",
+    "pages/func/func",
+    "pages/collect/collect"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#808080",
+    "navigationBarBackgroundColor": "#808080",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#6495ed",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath": "/images/tab/home.png",
+      "selectedIconPath": "/images/tab/home@selected.png"
+    },{
+      "pagePath": "pages/collect/collect",
+      "text": "收藏",
+      "iconPath": "/images/tab/category.png",
+      "selectedIconPath": "/images/tab/category@selected.png"
+    }]
+  }
+}

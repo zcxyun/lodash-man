@@ -1,0 +1,33 @@
+
+.key {
+  width: 670rpx;
+  border-radius: 50rpx;
+  padding: 20rpx;
+  font-weight: bold;
+  background: #6495ed;
+  margin-bottom: 15rpx; 
+}
+
+.key:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.key:first-of-type image{
+  margin-right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  cursor: pointer;
+}
+.key text {
+  padding-left: 30rpx;
+  color: white;
+}
+
+.value {
+  width: 670rpx;
+  padding: 20rpx;
+  background: #fdfdfd;
+  border-radius: 50rpx;
+  margin-bottom: 15rpx;
+}

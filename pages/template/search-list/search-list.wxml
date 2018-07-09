@@ -1,0 +1,19 @@
+<import src='../search/search.wxml' />
+<import src='../list/list.wxml' />
+
+
+<template name='search-list'>
+  <view class='container'>
+    <view class='header-space'></view>
+    <template is='search' data='{{searchText, searchPanelShow}}' />
+    <view wx:if='{{containerShow}}'>
+      <template is='list' data='{{list: list}}' />
+    </view>
+    <view wx:if='{{searchPanelShow}}'>
+      <template is='list' data='{{list: searchResult}}' />
+    </view>
+    <view class='footer'>
+      <text>Lodash v4.16.1</text>
+    </view>
+  </view>
+</template>

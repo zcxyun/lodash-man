@@ -1,0 +1,19 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /* background-color: #f0f1f2; */
+} 
+page {
+  background-color: #808080;
+}
+text {
+  font-family: MicroSoft Yahei;
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #6495ed;
+}

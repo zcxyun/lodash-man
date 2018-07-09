@@ -1,0 +1,35 @@
+
+
+.list-container {
+  width: 700rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 105rpx; 
+  border-radius: 50rpx;
+}
+
+.list-item {
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50rpx;
+}
+
+.list-item-text {
+  margin-left: 40rpx;
+  line-height: 50rpx;
+
+}
+
+
+.goto-img{
+  width: 18rpx;
+  height: 32rpx;
+  margin-right: 30rpx;
+}

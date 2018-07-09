@@ -1,0 +1,19 @@
+@import '../search/search.wxss';
+@import '../list/list.wxss';
+
+.header-space {
+  position: fixed;
+  width: 100%;
+  background-color: #808080;
+  height: 105rpx;
+  border-radius: 0 0 80rpx 80rpx;
+}
+
+.footer {
+  margin-top: 10rpx;
+  text-align: center;
+}
+
+.footer text {
+  color: white;
+}

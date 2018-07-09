@@ -1,0 +1,3 @@
+<import src='../template/search-list/search-list.wxml' />
+
+<template is='search-list' data='{{searchText, searchPanelShow, containerShow, list: typeList, searchResult}}' />

@@ -1,0 +1,10 @@
+<template name='list'>
+  <view class='list-container'>
+    <block wx:for='{{list}}' wx:key='*this'>
+      <view class='list-item' bindtap='onListItemTap' data-list-item='{{item}}'>
+        <text class='list-item-text'>{{item}}</text>
+        <image class='goto-img' src='/images/icon/arrow-right.png'></image>
+      </view>
+    </block>
+  </view>
+</template>
